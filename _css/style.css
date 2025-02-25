@@ -1,0 +1,878 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px; /* Establece el tamaño base para las unidades rem */
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 75rem; /* 1200px / 16px = 75rem */
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(2, 2, 35);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 70vh; /* Usamos vh para la altura */
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.menu .navbar ul li {
+    float: right;
+    display: block; /* Asegúrate de que el elemento sea un bloque */
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(255, 0, 0);
+    display: block;
+    font-weight:600;
+    align-items: center;
+}
+
+
+.logo {
+    color: rgb(255, 0, 0);
+    font-size: 1.5625rem; /* 25px / 16px = 1.5625rem */
+    font-weight: 800;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 1.5625rem; /* 25px / 16px = 1.5625rem */
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 25rem; /* 400px / 16px = 25rem */
+}
+
+.header-txt img {
+    width: 25rem; /* 400px / 16px = 25rem */
+}
+
+.header-txt h1 {
+    font-size: 1.5625rem; /* 25px / 16px = 1.5625rem */
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #cdd2d6;
+    margin: 1.5625rem 0 2.1875rem 0; /* 25px / 16px = 1.5625rem, 35px / 16px = 2.1875rem */
+}
+
+p {
+    font-size: 1rem; /* 16px / 16px = 1rem */
+    color: grey;
+    margin-bottom: 1.5625rem; /* 25px / 16px = 1.5625rem */
+}
+
+.enlace {
+    margin: 2.1875rem; /* 35px / 16px = 2.1875rem */
+    text-align: center;
+}
+
+.enlace a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1rem; /* 16px / 16px = 1rem */
+    color: rgb(150, 8, 8);
+}
+
+.enlace img {
+    margin-top: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    width: 0.625rem; /* 10px / 16px = 0.625rem */
+}
+
+.about {
+    display: flex;
+    padding: 0 0 4.375rem 0; /* 70px / 16px = 4.375rem */
+}
+
+.about-1 {
+    width: 40%;
+}
+
+.about-in {
+    display: flex;
+    align-items: center;
+}
+
+.about-in h3 {
+    display: inline-block;
+    padding: 2.8125rem 1.5625rem; /* 45px / 16px = 2.8125rem, 25px / 16px = 1.5625rem */
+    background-color: rgb(237, 16, 16);
+    color: black;
+    font-size: 1.375rem; /* 22px / 16px = 1.375rem */
+    text-transform: uppercase;
+}
+
+.about-in span {
+    font-size: 1.375rem; /* 22px / 16px = 1.375rem */
+    color: beige;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 5.3125rem; /* 85px / 16px = 5.3125rem */
+}
+
+.about-1 img {
+    width: 100%;
+    margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
+}
+
+.about-2 {
+    width: 60%;
+}
+
+.about-2 img {
+    width: 100%;
+}
+
+.left {
+    margin: 1.5625rem 0 2.1875rem 2.8125rem; /* 25px / 16px = 1.5625rem, 35px / 16px = 2.1875rem, 45px / 16px = 2.8125rem */
+}
+
+.back {
+    display: inline-block;
+    font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    border: 0.125rem solid rgb(255, 0, 0); /* 2px / 16px = 0.125rem */
+    margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    font-size: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    padding: 0.875rem 1.5625rem; /* 14px / 16px = 0.875rem, 25px / 16px = 1.5625rem */
+    color: black;
+    font-weight: 600;
+}
+
+.game {
+    display: flex;
+}
+
+.game-1 {
+    width: 40%;
+}
+
+.game-1 img {
+    height: 43.75rem; /* 700px / 16px = 43.75rem */
+    margin-bottom: 2.1875rem; /* 35px / 16px = 2.1875rem */
+}
+
+.game-2 {
+    width: 60%;
+}
+
+.game-2 img {
+    width: 100%;
+    height: 28.125rem; /* 450px / 16px = 28.125rem */
+}
+
+.srvices {
+    padding: 6.25rem 0; /* 100px / 16px = 6.25rem */
+    display: flex;
+    justify-content: space-between;
+}
+
+.srvices p {
+    background-color: rgb(255, 0, 0);
+    padding: 2.8125rem; /* 45px / 16px = 2.8125rem */
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.375rem; /* 22px / 16px = 1.375rem */
+    font-weight: 600;
+}
+
+.footer {
+    padding: 6.25rem 0; /* 100px / 16px = 6.25rem */
+    text-align: center;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.1875rem; /* 35px / 16px = 2.1875rem */
+}
+
+.footer-img img {
+    margin: 0 2.5rem; /* 40px / 16px = 2.5rem */
+    width: 10%; /* 150px / 16px = 9.375rem */
+}
+
+/*CELULARES CSS */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+   /* Dispositivos móviles (hasta 600px) */
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    html {
+        font-size: 14px; /* Reducir el tamaño base para pantallas pequeñas */
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: black;
+    }
+
+    .container {
+        max-width: 100%; /* Ocupar todo el ancho disponible */
+        padding: 0 1rem; /* Añadir un poco de padding lateral */
+    }
+
+    header {
+        min-height: 50vh; /* Reducir la altura del header */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .menu {
+        display: flexbox;
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: flex-start;
+    }
+
+    .menu .navbar ul {
+        display: flex;
+        justify-content: flex-end; /* Alinea los elementos a la derecha */
+        margin: 0;
+        padding: 0;
+        list-style: none; /* Elimina los puntos de la lista */
+    }
+    
+    .menu .navbar ul li {
+        position: relative;
+        left: 30%;
+        margin-left: 1rem; /* Espacio entre elementos del menú */
+       
+    }
+    
+    
+    
+    .menu .navbar ul li a {
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+        padding: 0.5rem 1rem; /* Padding ajustado */
+        color: rgb(243, 0, 0);
+        display: block;
+        font-weight: 600;
+        text-decoration: none; /* Elimina el subrayado de los enlaces */
+    }
+
+
+    .logo {
+        font-size: 1.5rem; /* Tamaño del logo */
+        display: flexbox;
+        align-items: center;
+        color: rgb(243, 0, 0); /* Color del logo */
+        font-weight: bold;
+    }
+
+    .menu label {
+        display: flex; /* Mostrar el ícono del menú */
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none; /* Ocultar el menú por defecto */
+    }
+
+    .header-txt {
+        width: 100%; /* Ocupar todo el ancho */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    .header-txt img {
+        width: 100%; /* Ajustar la imagen al ancho disponible */
+    }
+
+    .header-txt h1 {
+        font-size: 1.25rem; /* Reducir el tamaño del título */
+    }
+
+    p {
+        font-size: 0.875rem; /* Reducir el tamaño del texto */
+    }
+
+    .enlace {
+        margin: 1rem 0; /* Reducir el margen */
+    }
+
+    .enlace a {
+        font-size: 0.875rem; /* Reducir el tamaño del enlace */
+    }
+
+    .about {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        padding: 0 0 2rem 0; /* Reducir el padding */
+    }
+
+    .about-1, .about-2 {
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    .about-in h3, .about-in span {
+        font-size: 1rem; /* Reducir el tamaño de la fuente */
+        padding: 1rem; /* Reducir el padding */
+    }
+
+    .about-in span {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+    }
+
+    .game {
+        flex-direction: column; /* Cambiar a disposición vertical */
+    }
+
+    .game-1, .game-2 {
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    .game-1 img {
+        height: auto;
+        width: 100%; /* Ajustar la altura automáticamente */
+    }
+
+    .game-2 img {
+        height: auto;
+        /* Ajustar la altura automáticamente */
+    }
+
+    .srvices {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        padding: 2rem 0; /* Reducir el padding */
+    }
+
+    .srvices p {
+        font-size: 1rem; /* Reducir el tamaño de la fuente */
+        padding: 1rem; /* Reducir el padding */
+    }
+
+    .footer {
+        padding: 2rem 0; /* Reducir el padding */
+    }
+
+    .footer-img {
+        flex-direction: column; /* Cambiar a disposición vertical */
+    }
+
+    .footer-img img {
+        margin: 1rem 0; /* Reducir el margen */
+        width: 50%; /* Reducir el tamaño de las imágenes */
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {/* Dispositivos móviles (hasta 767px) */
+    @media only screen and (max-width: 767px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+    
+        html {
+            font-size: 14px; /* Reducir el tamaño base para móviles */
+        }
+    
+        body {
+            font-family: sans-serif;
+            background-color: black;
+        }
+    
+        .container {
+            max-width: 100%; /* Ajustar el ancho máximo al 100% */
+            padding: 0 1rem; /* Añadir un poco de padding */
+        }
+    
+        header {
+            min-height: 50vh; /* Reducir la altura del header */
+        }
+    
+        .menu {
+            flex-direction: column; /* Cambiar la dirección del menú a vertical */
+            align-items: flex-start;
+        }
+    
+        .menu .navbar ul li {
+            float: none; /* Eliminar el float para móviles */
+            width: 100%; /* Hacer que los elementos del menú ocupen todo el ancho */
+        }
+    
+        .menu .navbar ul li a {
+            font-size: 16px; /* Reducir el tamaño de la fuente */
+            padding: 10px; /* Reducir el padding */
+        }
+    
+        .logo {
+            font-size: 1.25rem; /* Reducir el tamaño del logo */
+        }
+    
+        .menu label {
+            display: block; /* Mostrar el ícono del menú */
+        }
+    
+        .header-txt {
+            width: 100%; /* Ajustar el ancho al 100% */
+            text-align: center; /* Centrar el texto */
+        }
+    
+        .header-txt img {
+            width: 100%; /* Ajustar el ancho de la imagen al 100% */
+        }
+    
+        .header-txt h1 {
+            font-size: 1.25rem; /* Reducir el tamaño del título */
+            margin: 1rem 0; /* Ajustar los márgenes */
+        }
+    
+        p {
+            font-size: 0.875rem; /* Reducir el tamaño del texto */
+        }
+    
+        .enlace {
+            margin: 1rem; /* Reducir el margen */
+        }
+    
+        .enlace a {
+            font-size: 0.875rem; /* Reducir el tamaño del enlace */
+        }
+    
+        .enlace img {
+            width: 0.5rem; /* Reducir el tamaño de la imagen */
+        }
+    
+        .about {
+            flex-direction: column; /* Cambiar la dirección a vertical */
+            padding: 0 0 2rem 0; /* Reducir el padding */
+        }
+    
+        .about-1, .about-2 {
+            width: 100%; /* Ajustar el ancho al 100% */
+        }
+    
+        .about-in h3, .about-in span {
+            font-size: 1rem; /* Reducir el tamaño de la fuente */
+        }
+    
+        .about-in span {
+            margin-left: 2rem; /* Reducir el margen */
+        }
+    
+        .about-1 img, .about-2 img {
+            margin-bottom: 1rem; /* Reducir el margen inferior */
+        }
+    
+        .left {
+            margin: 1rem 0; /* Reducir los márgenes */
+        }
+    
+        .back {
+            font-size: 1rem; /* Reducir el tamaño de la fuente */
+            padding: 0.5rem; /* Reducir el padding */
+        }
+    
+        .btn {
+            font-size: 0.875rem; /* Reducir el tamaño de la fuente */
+            padding: 0.5rem 1rem; /* Reducir el padding */
+        }
+    
+        .game {
+            flex-direction: column; /* Cambiar la dirección a vertical */
+        }
+    
+        .game-1, .game-2 {
+            width: 100%; /* Ajustar el ancho al 100% */
+        }
+    
+        .game-1 img {
+            height: auto; /* Ajustar la altura automáticamente */
+            margin-bottom: 1rem; /* Reducir el margen inferior */
+        }
+    
+        .game-2 img {
+            height: auto; /* Ajustar la altura automáticamente */
+        }
+    
+        .srvices {
+            flex-direction: column; /* Cambiar la dirección a vertical */
+            padding: 2rem 0; /* Reducir el padding */
+        }
+    
+        .srvices p {
+            font-size: 1rem; /* Reducir el tamaño de la fuente */
+            padding: 1rem; /* Reducir el padding */
+        }
+    
+        .footer {
+            padding: 2rem 0; /* Reducir el padding */
+        }
+    
+        .footer-img img {
+            margin: 0 1rem; /* Reducir el margen */
+            width: 20%; /* Reducir el tamaño de las imágenes */
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 16px; /* Establece el tamaño base para las unidades rem */
+}
+.lg{
+    font-size: 50;
+}
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 75rem; /* 1200px / 16px = 75rem */
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(2, 2, 35);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 70vh; /* Usamos vh para la altura */
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18%;
+    padding: 20%;
+    color: rgb(255, 0, 0);
+    display: block;
+    font-weight: 600;
+}
+
+.logo {
+    color: rgb(255, 0, 0);
+    font-size: 1.5625rem; /* 25px / 16px = 1.5625rem */
+    font-weight: 800;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 1.5625rem; /* 25px / 16px = 1.5625rem */
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 25rem; /* 400px / 16px = 25rem */
+}
+
+.header-txt img {
+    width: 25rem; /* 400px / 16px = 25rem */
+}
+
+.header-txt h1 {
+    font-size: 1.5625rem; /* 25px / 16px = 1.5625rem */
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #cdd2d6;
+    margin: 1.5625rem 0 2.1875rem 0; /* 25px / 16px = 1.5625rem, 35px / 16px = 2.1875rem */
+}
+
+p {
+    font-size: 1rem; /* 16px / 16px = 1rem */
+    color: grey;
+    margin-bottom: 1.5625rem; /* 25px / 16px = 1.5625rem */
+}
+
+.enlace {
+    margin: 2.1875rem; /* 35px / 16px = 2.1875rem */
+    text-align: center;
+}
+
+.enlace a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1rem; /* 16px / 16px = 1rem */
+    color: rgb(150, 8, 8);
+}
+
+.enlace img {
+    margin-top: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    width: 0.625rem; /* 10px / 16px = 0.625rem */
+}
+
+.about {
+    display: flex;
+    padding: 0 0 4.375rem 0; /* 70px / 16px = 4.375rem */
+}
+
+.about-1 {
+    width: 40%;
+}
+
+.about-in {
+    display: flex;
+    align-items: center;
+}
+
+.about-in h3 {
+    display: inline-block;
+    padding: 2.8125rem 1.5625rem; /* 45px / 16px = 2.8125rem, 25px / 16px = 1.5625rem */
+    background-color: rgb(237, 16, 16);
+    color: black;
+    font-size: 1.375rem; /* 22px / 16px = 1.375rem */
+    text-transform: uppercase;
+}
+
+.about-in span {
+    font-size: 1.375rem; /* 22px / 16px = 1.375rem */
+    color: beige;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 5.3125rem; /* 85px / 16px = 5.3125rem */
+}
+
+.about-1 img {
+    width: 100%;
+    margin-bottom: 1.875rem; /* 30px / 16px = 1.875rem */
+}
+
+.about-2 {
+    width: 60%;
+}
+
+.about-2 img {
+    width: 100%;
+}
+
+.left {
+    margin: 1.5625rem 0 2.1875rem 2.8125rem; /* 25px / 16px = 1.5625rem, 35px / 16px = 2.1875rem, 45px / 16px = 2.8125rem */
+}
+
+.back {
+    display: inline-block;
+    font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    border: 0.125rem solid rgb(255, 0, 0); /* 2px / 16px = 0.125rem */
+    margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    font-size: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    padding: 0.875rem 1.5625rem; /* 14px / 16px = 0.875rem, 25px / 16px = 1.5625rem */
+    color: black;
+    font-weight: 600;
+}
+
+.game {
+    display: flex;
+}
+
+.game-1 {
+    width: 40%;
+}
+
+.game-1 img {
+    height: 43.75rem; /* 700px / 16px = 43.75rem */
+    margin-bottom: 2.1875rem; /* 35px / 16px = 2.1875rem */
+}
+
+.game-2 {
+    width: 60%;
+}
+
+.game-2 img {
+    width: 100%;
+    height: 28.125rem; /* 450px / 16px = 28.125rem */
+}
+
+.srvices {
+    padding: 6.25rem 0; /* 100px / 16px = 6.25rem */
+    display: flex;
+    justify-content: space-between;
+}
+
+.srvices p {
+    background-color: rgb(255, 0, 0);
+    padding: 2.8125rem; /* 45px / 16px = 2.8125rem */
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.375rem; /* 22px / 16px = 1.375rem */
+    font-weight: 600;
+}
+
+.footer {
+    padding: 6.25rem 0; /* 100px / 16px = 6.25rem */
+    text-align: center;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.1875rem; /* 35px / 16px = 2.1875rem */
+}
+
+.footer-img img {
+    margin: 0 2.5rem; /* 40px / 16px = 2.5rem */
+    width: 10%; /* 150px / 16px = 9.375rem */
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 90rem; /* 1440px / 16px = 90rem */
+    }
+
+    header {
+        min-height: 80vh; /* Aumentamos la altura del header */
+    }
+
+    .menu .navbar ul li a {
+        font-size: 20px; /* Aumentamos el tamaño de la fuente */
+        padding: 25px; /* Aumentamos el padding */
+    }
+
+    .logo {
+        font-size: 2rem; /* 32px / 16px = 2rem */
+    }
+
+    .header-txt {
+        width: 30rem; /* 480px / 16px = 30rem */
+    }
+
+    .header-txt img {
+        width: 30rem; /* 480px / 16px = 30rem */
+    }
+
+    .header-txt h1 {
+        font-size: 2rem; /* 32px / 16px = 2rem */
+    }
+
+    p {
+        font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+    }
+
+    .enlace a {
+        font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+    }
+
+    .about-in h3 {
+        font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+    }
+
+    .about-in span {
+        font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+    }
+
+    .back {
+        font-size: 1.25rem; /* 20px / 16px = 1.25rem */
+    }
+
+    .btn {
+        font-size: 1rem; /* 16px / 16px = 1rem */
+        padding: 1rem 2rem; /* 16px / 16px = 1rem, 32px / 16px = 2rem */
+    }
+
+    .game-1 img {
+        height: 50rem; /* 800px / 16px = 50rem */
+    }
+
+    .game-2 img {
+        height: 31.25rem; /* 500px / 16px = 31.25rem */
+    }
+
+    .srvices p {
+        font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+    }
+
+    .footer-img img {
+        width: 12.5%; /* 200px / 16px = 12.5rem */
+    }
+}
+}
